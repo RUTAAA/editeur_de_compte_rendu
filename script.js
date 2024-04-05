@@ -24,7 +24,7 @@ const boutonsQuaternaires =
     "</button></div>";
 
 const boutonsTertiaires =
-    '<div class="divBoutonsTertiaires"><button onclick="ajouterParagraphe(indice de la partie)">Ajouter un paragraphe<button onclick="ajouterCode(indice de la partie)">Ajouter du code</button><input id="bouttonImageindice de la partie" type="file" onchange="ajouterImage(this, indice de la partie)" value="Ajouter une image" /></div>';
+    '<div class="divBoutonsTertiaires"><button onclick="ajouterSousPartie(indice de la partie)">Nouvelle sous-partie</button><button onclick="ajouterParagraphe(indice de la partie)">Ajouter un paragraphe</button><button onclick="ajouterCode(indice de la partie)">Ajouter du code</button><input id="bouttonImageindice de la partie" type="file" onchange="ajouterImage(this, indice de la partie)" value="Ajouter une image" /></div>';
 const boutonsSecondaires =
     '<div class="divBoutonsSecondaires"><button onclick="supprimerPartie(indice de la partie);">' +
     cross +
@@ -70,6 +70,10 @@ function exporter() {
     document.querySelector(":root").style.setProperty("--cacher", "none");
     window.print();
     document.querySelector(":root").style.setProperty("--cacher", "inline-block");
+}
+
+function sauvegarder() {
+    alert("Non pris en charge pour le moment.");
 }
 
 
@@ -140,6 +144,10 @@ function ajouterImage(element, n) {
 
 function supprimerElement(element) {
     element.remove();
+}
+
+function ajouterSousPartie() {
+    alert("Non pris en charge pour le moment.");
 }
 
 function monterElement(element) {
